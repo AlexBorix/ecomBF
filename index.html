@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmétiques Boutique</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Cosmétiques Naturels</div>
+      <ul class="nav-links">
+        <li><a href="#products">Produits</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="cart-icon" id="open-cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+        <div class="hero">
+          <div class="hero-text">
+            <h1>Découvrez nos cosmétiques naturels</h1>
+            <p>Rehaussez votre éclat avec nos soins personnalisés. Des produits naturels adaptés à vos besoins uniques.</p>
+            <a href="#products" class="btn">Voir les produits</a>
+          </div>
+          <div class="hero-image">
+            <img src="assets/Diallo-removebg-preview.png" alt="Cosmétiques Naturels">
+          </div>
+        </div>
+      </section>
+      
+    <!-- <section id="products">
+      <h2>Nos Produits</h2>
+      <div class="product-grid">
+        <div class="product" data-id="1" data-name="Crème Hydratante" data-price="15">
+          <img src="https://via.placeholder.com/150" alt="Crème Hydratante">
+          <h3>Crème Hydratante</h3>
+          <p>Prix : 15€</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+        <div class="product" data-id="2" data-name="Huile d'Argan" data-price="20">
+          <img src="https://via.placeholder.com/150" alt="Huile d'Argan">
+          <h3>Huile d'Argan</h3>
+          <p>Prix : 20€</p>
+          <button class="add-to-cart">Ajouter au panier</button>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <!-- Fenêtre latérale du panier -->
+  <div id="cart-drawer" class="drawer">
+    <div class="drawer-header">
+      <h2>CART</h2>
+      <button id="close-cart" class="close-btn">&times;</button>
+    </div>
+    <ul id="cart-items" class="cart-list"></ul>
+    <div class="cart-footer">
+      <p>Total : <span id="total-price">0</span>€</p>
+      <button id="checkout" class="btn">Passer à WhatsApp</button>
+    </div>
+  </div>
+  
+
+  <footer>
+    <p>&copy; 2024 Cosmétiques Naturels. Tous droits réservés.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
