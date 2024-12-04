@@ -12,27 +12,46 @@ body {
     padding: 10px 20px;
   }
   
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  
   
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #8b3d3a;
+    line-height: 1;
+  padding: 5px 0;
   }
   
+  /* Navigation générale */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #ffcec2;
+  }
+  
+  /* Liens de navigation */
   .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
   .nav-links li a {
     text-decoration: none;
     color: #8b3d3a;
+  }
+  /* Menu Burger */
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #8b3d3a;
+    cursor: pointer;
+    margin-left: 20px; /* Espacement avec le logo */
   }
   
   .cart-icon {
@@ -40,6 +59,7 @@ body {
     color: #8b3d3a;
     font-size: 1.5rem;
     cursor: pointer;
+    margin-left: 20px; /* Ajout d'espacement à droite */
   }
   
   #cart-count {
@@ -294,9 +314,33 @@ body {
       justify-content: center;
     }
   
-    .nav-links {
-      gap: 15px;
-    }
+    .burger-menu {
+        display: block; /* Affiche le menu burger */
+      }
+    
+      /* Cache les liens par défaut */
+      .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ffcec2;
+        width: 100%;
+        padding: 10px 0;
+        gap: 15px;
+        display: none; /* Caché initialement */
+      }
+    
+      /* Liens visibles lorsque "active" est ajouté */
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .nav-links li a {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+      }
   
     /* Section Accueil */
     #home {

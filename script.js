@@ -137,3 +137,12 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
     addToCart(product);
   });
 });
+
+// Sélection du menu burger et des liens
+const burgerMenu = document.getElementById('burger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+// Gestion du clic sur le menu burger
+burgerMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('active'); // Ajoute ou retire la classe "active"
+});
