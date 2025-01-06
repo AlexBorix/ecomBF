@@ -3,12 +3,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fdf5f4;
+   
 }
 
 /* En-tête */
 header {
-  background-color: #ffcec2;
+  background-color: #255b94;
   padding: 10px 20px;
 }
 
@@ -17,7 +17,7 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #8b3d3a;
+  color: #edf0f3;
   line-height: 1;
 padding: 5px 0;
 }
@@ -28,7 +28,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  background-color: #ffcec2;
+  
 }
 
 /* Liens de navigation */
@@ -41,7 +41,7 @@ nav {
 
 .nav-links li a {
   text-decoration: none;
-  color: #8b3d3a;
+  color: #ffffff;
 }
 /* Menu Burger */
 .burger-menu {
@@ -49,14 +49,14 @@ nav {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #8b3d3a;
+  color: #255b94;
   cursor: pointer;
   margin-left: 20px; /* Espacement avec le logo */
 }
 
 .cart-icon {
   position: relative;
-  color: #8b3d3a;
+  color: #255b94;
   font-size: 1.5rem;
   cursor: pointer;
   margin-left: 20px; /* Ajout d'espacement à droite */
@@ -81,7 +81,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: left;
-  background-color: #ffe8e0; /* Couleur douce reflétant les produits cosmétiques */
+  background-color: #e4dddd; /* Couleur douce reflétant les produits cosmétiques */
   padding: 20px;
 }
 
@@ -99,7 +99,7 @@ nav {
 
 .hero-text h1 {
   font-size: 3rem;
-  color: #8b3d3a; /* Couleur inspirée de la beauté naturelle */
+  color: #255b94; /* Couleur inspirée de la beauté naturelle */
   margin-bottom: 20px;
 }
 
@@ -112,7 +112,7 @@ nav {
 
 .hero-text .btn {
   margin-top: 20px;
-  background-color: #8b3d3a;
+  background-color: #255b94;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -132,7 +132,7 @@ nav {
 
 .hero-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 900px;
   height: auto;
   border-radius: 10px; /* Ajoute un effet doux aux coins */
 }
@@ -154,7 +154,7 @@ nav {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #ffe8e0;
+  background-color: #eaeaf3;
 }
 
 .product img {
@@ -163,7 +163,7 @@ nav {
 }
 
 button {
-  background-color: #8b3d3a;
+  background-color: #255b94;
   color: white;
   border: none;
   padding: 10px;
@@ -178,7 +178,7 @@ button:hover {
 /* Section Panier */
 #cart {
   padding: 20px;
-  background-color: #ffe8e0;
+  
   margin: 20px;
   border-radius: 5px;
 }
@@ -195,7 +195,7 @@ button:hover {
 /* Pied de page */
 footer {
   text-align: center;
-  background-color: #8b3d3a;
+  background-color: #255b94;
   color: white;
   padding: 10px 0;
 }
@@ -244,7 +244,7 @@ footer {
   display: inline-block;
   text-align: center;
   margin-top: 20px;
-  background-color: #8b3d3a;
+  background-color: #255b94;
   color: white;
   padding: 10px 20px;
   border: none;
