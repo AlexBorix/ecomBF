@@ -113,11 +113,11 @@ checkoutButton.addEventListener('click', () => {
   }
 
   const orderDetails = cart
-    .map(item => `${item.name} x ${item.quantity} - ${item.price * item.quantity}€`)
+    .map(item => `${item.name} x ${item.quantity} - ${item.price * item.quantity}FCFA`)
     .join('\n');
 
   const total = totalPriceElement.textContent;
-  const message = `Bonjour, je souhaite commander les produits suivants :\n${orderDetails}\n\nTotal : ${total}€`;
+  const message = `Bonjour, je souhaite commander les produits suivants :\n${orderDetails}\n\nTotal : ${total}FCFA`;
   const whatsappUrl = `https://wa.me/+22672827280?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
 });
