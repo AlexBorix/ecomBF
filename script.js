@@ -42,14 +42,7 @@ function decreaseQuantity(productId) {
   }
 }
 
-// Supprimer un produit du panier
-function removeFromCart(productId) {
-  const productIndex = cart.findIndex(item => item.id === productId);
-  if (productIndex !== -1) {
-    cart.splice(productIndex, 1);
-  }
-  updateCart();
-}
+ 
 
 // Mettre à jour le panier
 function updateCart() {
@@ -61,7 +54,7 @@ function updateCart() {
   
       const listItem = document.createElement('li');
       listItem.innerHTML = `
-        <img src="https://via.placeholder.com/50" alt="${item.name}">
+        <img src="${item.image}" alt="${item.name}" style="width: 80px; height: auto;>
         <div class="product-details">
           <h3>${item.name}</h3>
           <p>${item.price}FCFA/1 produit</p>
@@ -133,6 +126,7 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
       id: productElement.getAttribute('data-id'),
       name: productElement.getAttribute('data-name'),
       price: parseFloat(productElement.getAttribute('data-price')),
+      image: productElement.getAttribute('data-image'),
     };
     addToCart(product);
   });
