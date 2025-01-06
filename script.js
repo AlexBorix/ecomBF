@@ -64,7 +64,7 @@ function updateCart() {
         <img src="https://via.placeholder.com/50" alt="${item.name}">
         <div class="product-details">
           <h3>${item.name}</h3>
-          <p>${item.price}€/1 produit</p>
+          <p>${item.price}FCFA/1 produit</p>
         </div>
         <div class="quantity-controls">
           <button class="decrease-btn" data-id="${item.id}">-</button>
